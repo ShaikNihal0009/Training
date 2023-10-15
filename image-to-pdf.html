@@ -21,14 +21,21 @@
         </ul>
     </nav>
 
-    
+    <script>
+        window.addEventListener('resize', toggleFormVisibility);
+
+        function toggleFormVisibility() {
+            const form = document.querySelector('main form');
+            if (window.innerWidth < 768) {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+    </script>
 
     <main>
-        <!-- Your Images to PDF Convert page content goes here -->
-        <form action="convert.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="image" accept="image/*" required>
-            <button type="submit">Convert to PDF</button>
-        </form>
+        
     </main>
 
     <footer>
