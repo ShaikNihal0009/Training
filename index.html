@@ -4,41 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Home Page</title>
+    <title>Infinity Docs</title>
 </head>
 <body>
-    <header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="image-to-pdf.html#image-to-pdf">Images to PDF Convert</a></li>
+            <li><a href="pdf-merge.html#pdf-merge">PDF Merge</a></li>
+            <li><a href="word-to-pdf.html#word-to-pdf">Word to PDF Convert</a></li>
+            <li><a href="pdf-to-word.html#pdf-to-word">PDF to Word Converter</a></li>
+            <li><a href="ppt-to-pdf.html#ppt-to-pdf">PPT to PDF Convert</a></li>
+        </ul>
+    </nav>
+    
+    <header id="home">
         <h1>Welcome to Infinity Docs</h1>
-        <nav>
-            <ul>
-                <li><a href="javascript:void(0);" onclick="loadContent('home')">Home</a></li>
-                <li><a href="javascript:void(0);" onclick="loadContent('image-to-pdf')">Images to PDF Convert</a></li>
-                <li><a href="javascript:void(0);" onclick="loadContent('pdf-merge')">PDF Merge</a></li>
-                <li><a href="javascript:void(0);" onclick="loadContent('word-to-pdf')">Word to PDF Convert</a></li>
-                <li><a href="javascript:void(0);" onclick="loadContent('pdf-to-word')">PDF to Word Converter</a></li>
-                <li><a href="javascript:void(0);" onclick="loadContent('ppt-to-pdf')">PPT to PDF Convert</a></li>
-            </ul>
-        </nav>
     </header>
+    
     <main>
         <!-- Your homepage content goes here -->
     </main>
+    
     <footer>
         &copy; 2023 Your Website Name
     </footer>
-
-    <script>
-        function loadContent(page) {
-            const contentContainer = document.getElementById('content-container');
-            const xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState === 4 && this.status === 200) {
-                    contentContainer.innerHTML = this.responseText;
-                }
-            };
-            xhttp.open('GET', page + '.html', true);
-            xhttp.send();
-        }
-    </script>
 </body>
 </html>
