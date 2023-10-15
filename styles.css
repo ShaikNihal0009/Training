@@ -52,11 +52,21 @@ nav li a:hover {
     }
 }
 /* Make the form responsive for mobile */
-/*main form {
+main form {
     display: flex;
     flex-direction: column;
     align-items: center;
-}*/
+}
+@media (max-width: 768px) {
+    main form {
+        /* Adjust styles for mobile devices */
+        display: block; /* Example: change display to block for smaller screens */
+        margin: 10px; /* Example: add margin for spacing */
+        padding: 10px; /* Example: add padding for spacing */
+        max-width: 100%; /* Example: make form width 100% of the container */
+        /* Add more styles as needed for mobile layout */
+    }
+}
 
 main form input[type="file"] {
     margin: 10px 0;
