@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Image to PDF Conversion</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="loadContent('home')">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="loadContent('image-to-pdf')">Images to PDF Convert</a></li>
+                <li><a href="javascript:void(0);" onclick="loadContent('pdf-merge')">PDF Merge</a></li>
+                <li><a href="javascript:void(0);" onclick="loadContent('word-to-pdf')">Word to PDF Convert</a></li>
+                <li><a href="javascript:void(0);" onclick="loadContent('pdf-to-word')">PDF to Word Converter</a></li>
+                <li><a href="javascript:void(0);" onclick="loadContent('ppt-to-pdf')">PPT to PDF Convert</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Your homepage content goes here -->
+    </main>
+    <footer>
+        &copy; 2023 Your Website Name
+    </footer>
+
+    <script>
+        function loadContent(page) {
+            const contentContainer = document.getElementById('content-container');
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    contentContainer.innerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', page + '.html', true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
