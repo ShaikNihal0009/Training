@@ -51,18 +51,6 @@ nav li a:hover {
         width: 100%;
     }
 }
-/* Make the form responsive for mobile */
-main form {
-    display: block;
-    
-}
-@media (max-width: 768px) {
-    main form {
-        /* Adjust styles for mobile devices */
-        display: block; /* Example: change display to block for smaller screens */
-        
-    }
-}
 /* Add custom CSS styles for the form */
 main form {
     background-color: #f2f2f2;
