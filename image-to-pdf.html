@@ -20,7 +20,16 @@
             <li><a href="ppt-to-pdf.html#ppt-to-pdf">PPT to PDF Convert</a></li>
         </ul>
     </nav>
+    <main>
+        <form action="convert.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Convert to PDF</button>
+        </form>
+    </main>
 
+    <footer>
+        &copy; 2023 Your Website Name
+    </footer>
     <script>
         window.addEventListener('resize', toggleFormVisibility);
 
@@ -33,13 +42,5 @@
             }
         }
     </script>
-
-    <main>
-        
-    </main>
-
-    <footer>
-        &copy; 2023 Your Website Name
-    </footer>
 </body>
 </html>
