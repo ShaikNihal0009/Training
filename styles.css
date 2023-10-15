@@ -52,7 +52,7 @@ nav li a:hover {
     }
 }
 /* Make the form responsive for mobile */
-main form {
+/*main form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,3 +91,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+*/
