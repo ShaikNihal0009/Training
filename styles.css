@@ -5,13 +5,12 @@
 
 /* Add custom CSS styles for the header text */
 /* Add custom CSS styles for the header */
+
 header {
-    background: linear-gradient(135deg, #54a154, #1d641d);
+    background-color: #4CAF50;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
