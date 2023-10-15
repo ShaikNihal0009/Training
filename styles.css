@@ -61,14 +61,14 @@ main form {
 main form input[type="file"] {
     margin: 10px 0;
     padding: 10px;
-    width: 100%;
-    max-width: 300px; /* Adjust the maximum width as needed */
+    width: 50%;
+    max-width: 100px; /* Adjust the maximum width as needed */
 }
 
 main form button {
     padding: 10px;
-    width: 100%;
-    max-width: 300px; /* Adjust the maximum width as needed */
+    width: 50%;
+    max-width: 100px; /* Adjust the maximum width as needed */
 }
 
 /* Adjust the footer for mobile */
