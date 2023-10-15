@@ -11,6 +11,20 @@ header {
 header h1 {
     font-size: 24px;
 }
+/* styles.css */
+
+/* Add custom CSS styles for the header text */
+.threed-text {
+    font-size: 36px;
+    text-align: center;
+    background: linear-gradient(45deg, #4CAF50, #3498db);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 nav ul {
     list-style-type: none;
