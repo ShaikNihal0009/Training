@@ -25,6 +25,10 @@
 
     <main>
         <!-- Your Images to PDF Convert page content goes here -->
+        <form action="convert.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Convert to PDF</button>
+        </form>
     </main>
 
     <footer>
